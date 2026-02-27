@@ -1,0 +1,165 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, local)",
+      "args": [
+        "${workspaceRoot}\\eval_settings_local.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, local)",
+      "args": [
+        "${workspaceRoot}\\eval_settings_local.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison pines)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison pines)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison salinas)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison salinas)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison pines euc)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph_euc.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison pines euc)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph_euc.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison salinas euc)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph_euc.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison salinas euc)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph_euc.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison pines geo)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison pines geo)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_sph_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "SPHEvaluation (Debug, comparison salinas geo)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "SPHEvaluation (Release, comparison salinas geo)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_salinas_sph_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluationd.exe (evaluation\\Debug\\SPHEvaluationd.exe)",
+      "name": "RGB Bus eval (Debug)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_rgb_bus_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "RGB Bus eval (Release)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_rgb_bus_geo.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (evaluation\\Release\\SPHEvaluation.exe)",
+      "name": "Pines embedding (Release)",
+      "args": [
+        "${workspaceRoot}\\comparison\\comparison_pines_embed.json"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "SPHEvaluation.exe (Install)",
+      "name": "SPHEvaluation.exe (Install)"
+    }
+  ]
+}

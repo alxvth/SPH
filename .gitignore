@@ -1,0 +1,12 @@
+build
+out
+*.bak
+.idea
+.vscode
+.vs
+eval_settings_local.json
+eval_settings_*
+SPHPlugin_log.txt
+SPH_log.txt
+tests/data/out
+evaluation/Log_*

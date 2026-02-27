@@ -1,0 +1,134 @@
+{
+  "version": 9,
+  "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 31,
+      "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "SphSettings",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/out/build",
+      "generator": "Ninja Multi-Config",
+      "cacheVariables": {
+          "SPH_PRECOM_HEADER": "OFF",
+          "SPH_BUILD_EVAL": "ON",
+          "SPH_BUILD_TESTS": "ON",
+          "SPH_BUILD_RUNTIME_GPU": "ON",
+          "SPH_BUILD_VIS": "ON",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/",
+          "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+        "name": "linux-gcc",
+        "displayName": "Linux GCC",
+        "description": "Build on linux using Ninja generator",
+        "hidden": false,
+        "inherits": "SphSettings",
+        "cacheVariables": {
+            "CMAKE_C_COMPILER": "gcc",
+            "CMAKE_CXX_COMPILER": "g++"
+          },
+        "condition": {
+            "type": "equals",
+            "lhs": "${hostSystemName}",
+            "rhs": "Linux"
+        }
+    },
+    {
+        "name": "windows-msvc",
+        "displayName": "Windows MSVC",
+        "description": "Using compilers for Visual Studio (x86_x64 architecture)",
+        "inherits": "SphSettings",
+        "hidden": false,
+        "cacheVariables": {
+            "CMAKE_C_COMPILER": "cl",
+            "CMAKE_CXX_COMPILER": "cl"
+        },
+        "condition": {
+          "type": "equals",
+          "lhs": "${hostSystemName}",
+          "rhs": "Windows"
+        }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "msvc-release",
+      "displayName": "Release",
+      "configuration": "Release",
+      "configurePreset": "windows-msvc",
+      "verbose": false,
+      "hidden": false
+    },
+    {
+      "name": "msvc-release-rebuild",
+      "displayName": "Release (rebuild)",
+      "inherits": "msvc-release",
+      "cleanFirst": true,
+      "hidden": false
+    },
+    {
+      "name": "msvc-debug",
+      "displayName": "Debug",
+      "configuration": "Debug",
+      "configurePreset": "windows-msvc",
+      "verbose": true,
+      "hidden": false
+    },
+    {
+      "name": "msvc-debug-rebuild",
+      "displayName": "Debug (rebuild)",
+      "inherits": "msvc-debug",
+      "cleanFirst": true,
+      "hidden": false
+    },
+    {
+      "name": "msvc-relwithdebinfo",
+      "displayName": "RelWithDebInfo",
+      "configuration": "RelWithDebInfo",
+      "configurePreset": "windows-msvc",
+      "verbose": true,
+      "hidden": false
+    },
+    {
+      "name": "msvc-relwithdebinfo-rebuild",
+      "displayName": "RelWithDebInfo (rebuild)",
+      "inherits": "msvc-relwithdebinfo",
+      "cleanFirst": true,
+      "hidden": false
+    },
+    {
+      "name": "linux-release",
+      "displayName": "Release",
+      "configuration": "Release",
+      "configurePreset": "linux-gcc",
+      "verbose": false,
+      "hidden": false
+    },
+    {
+      "name": "linux-release-rebuild",
+      "displayName": "Release (rebuild)",
+      "inherits": "linux-release",
+      "cleanFirst": true,
+      "hidden": false
+    },
+    {
+      "name": "linux-debug",
+      "displayName": "Debug",
+      "configuration": "Debug",
+      "configurePreset": "linux-gcc",
+      "verbose": true,
+      "hidden": false
+    },
+    {
+      "name": "linux-debug-rebuild",
+      "displayName": "Debug (rebuild)",
+      "inherits": "linux-debug",
+      "cleanFirst": true,
+      "hidden": false
+    }
+  ]
+}

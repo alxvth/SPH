@@ -1,0 +1,68 @@
+{
+  "inputPath": ".\\EvalSpatialHierarchy\\data",
+  "cachePathBase": ".\\EvalSpatialHierarchy\\out\\embeddings",
+  "saveSubFolder": "pines",
+  "imgFormat": "TIFFSTACK",
+  "imageNames": [
+    "indian_pines_corrected_normed"
+  ],
+  "componentSim": [
+    "NEIGH_WALKS"
+  ],
+  "dataInputNorm" : [
+    "NONE"
+  ],
+  "neighborConnection": [
+    "FOUR"
+  ],
+  "neighborSymmetries": [
+    true
+  ],
+  "neighborConnectComponents": [
+    true
+  ],
+  "knnMetric": [
+    "L2"
+  ],
+  "nKnns": [
+    90
+  ],
+  "randomWalkNums": [
+    50
+  ],
+  "randomWalkLens": [
+    10
+  ],
+  "randomWalkStepWeight": [
+    "NORMAL"
+  ],
+  "randomWalkSim": [
+    "NEIGH_WALKS"
+  ],
+  "randomWalkHandling" : [
+    "MERGE_RW_ONLY"
+  ],
+  "randomWalkReduction" : [
+    "PROPORTIONAL_COMPONENT_REDUCTION"
+  ],
+  "randomWalkWeightSize" : [
+    true
+  ],
+  "randomWalkPairSims" : [
+    true
+  ],
+  "dataDistNorm": [
+    "TSNE",
+    "UMAP"
+  ],
+  "weightTransitionBySize" : [
+    false
+  ],
+  "initEmbeddingDataLevel" : "PCA",
+  "skipLevelSimilarities" : false,
+  "skipEmbeddingTSNE" : false,
+  "skipEmbeddingUMAP" : false,
+  "skipExistingSettings" : true,
+  "skipSaveStructuresToDisk" : true,
+  "initLevelEmbWithPrevious" : true
+}

@@ -1,0 +1,67 @@
+{
+  "inputPath": ".\\EvalSpatialHierarchy\\data\\superpixel_rgb\\images\\resize\\",
+  "cachePathBase": ".\\EvalSpatialHierarchy\\out\\superpixel_rgb\\",
+  "saveSubFolder": "bus_third",
+  "imgFormat": "RGB",
+  "imageNames": [
+    "bus_third.jpg"
+  ],
+  "componentSim": [
+    "GEO_CENTROID"
+  ],
+  "dataInputNorm" : [
+    "NONE"
+  ],
+  "neighborConnection": [
+    "FOUR",
+    "EIGHT"
+  ],
+  "neighborSymmetries": [
+    true
+  ],
+  "neighborConnectComponents": [
+    true
+  ],
+  "knnMetric": [
+    "L2"
+  ],
+  "nKnns": [
+    0,
+    90
+  ],
+  "randomWalkNums": [
+  ],
+  "randomWalkLens": [
+  ],
+  "randomWalkStepWeight": [
+    "NORMAL"
+  ],
+  "randomWalkSim": [
+    "NEIGH_WALKS"
+  ],
+  "randomWalkHandling" : [
+    "MERGE_RW_ONLY"
+  ],
+  "randomWalkReduction" : [
+    "PROPORTIONAL_COMPONENT_REDUCTION"
+  ],
+  "randomWalkWeightSize" : [
+    true
+  ],
+  "randomWalkPairSims" : [
+    true
+  ],
+  "dataDistNorm": [
+    "TSNE"
+  ],
+  "weightTransitionBySize" : [
+    false
+  ],
+  "initEmbeddingDataLevel" : "PCA",
+  "skipLevelSimilarities" : false,
+  "skipEmbeddingTSNE" : false,
+  "skipEmbeddingUMAP" : true,
+  "skipExistingSettings" : true,
+  "skipSaveStructuresToDisk" : true,
+  "initLevelEmbWithPrevious" : true
+}

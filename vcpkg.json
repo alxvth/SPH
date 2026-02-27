@@ -1,0 +1,210 @@
+{
+    "name": "sph-library",
+    "version": "0.0.1",
+    "dependencies": [
+        "annoy",
+        "boost-graph",
+        "eigen3",
+        {
+            "name": "faiss",
+            "features": [ "avx2" ]
+        },
+        "flann",
+        "fmt",
+        "hnswlib",
+        "knncolle",
+        "lapack",
+        "libscran-umappp",
+        "ltla-aarand",
+        "ltla-cppirlba",
+        "ltla-sanisizer",
+        "ltla-subpar",
+        "lz4",
+        "nlohmann-json",
+        "openblas",
+        "range-v3",
+        "spdlog",
+        "unordered-dense",
+        "libjpeg-turbo",
+        "libpng",
+        "tiff",
+        "tinycolormap"
+    ],
+    "features": {
+        "runtimegpu": {
+            "description": "Build utilities for runtimegpu (HDILib t-SNE)",
+            "dependencies": [
+                "glfw3"
+            ]
+        },
+        "visualization": {
+            "description": "Build Visualization project",
+            "dependencies": [
+                "glad",
+                "glfw3",
+                "glm",
+                {
+                    "name": "imgui",
+                    "features": [ "opengl3-binding", "glfw-binding" ]
+                },
+                "implot"
+            ]
+        },
+        "unittests": {
+            "description": "Build unit tests",
+            "dependencies": [
+                "catch2"
+            ]
+        },
+        "evaluation": {
+            "description": "Build evaluation",
+            "dependencies": [
+            ]
+        },
+        "local-tbb": {
+            "description": "Use vcpkg TBB",
+            "dependencies": [
+                "tbb"
+            ]
+        }
+    },
+    "builtin-baseline": "b42b19a62b63514ed9fa2a81e07ce75e613c83c0",
+    "overrides": [
+        {
+            "name": "annoy",
+            "version": "1.17.3#0"
+        },
+        {
+            "name": "blas",
+            "version": "2023-04-14#5"
+        },
+        {
+            "name": "boost",
+            "version": "1.90.0#1"
+        },
+        {
+            "name": "catch2",
+            "version": "3.12.0#0"
+        },
+        {
+            "name": "clapack",
+            "version": "3.2.1#24"
+        },
+        {
+            "name": "eigen3",
+            "version": "5.0.1#0"
+        },
+        {
+            "name": "flann",
+            "version": "2022-10-28#0"
+        },
+        {
+            "name": "fmt",
+            "version": "12.1.0#0"
+        },
+        {
+            "name": "glad",
+            "version": "0.1.36#0"
+        },
+        {
+            "name": "glfw3",
+            "version": "3.4#1"
+        },
+        {
+            "name": "glm",
+            "version": "1.0.1#3"
+        },
+        {
+            "name": "hnswlib",
+            "version": "0.8.0#0"
+        },
+        {
+            "name": "imgui",
+            "version": "1.91.9#0"
+        },
+        {
+            "name": "implot",
+            "version": "0.16#0"
+        },
+        {
+            "name": "knncolle",
+            "version": "3.1.0#0"
+        },
+        {
+            "name": "lapack",
+            "version-date": "2023-06-10#3"
+        },
+        {
+            "name": "lapack-reference",
+            "version": "3.12.1#2"
+        },
+        {
+            "name": "libjpeg-turbo",
+            "version": "3.1.3#0"
+        },
+        {
+            "name": "libscran-umappp",
+            "version": "3.2.0#0"
+        },
+        {
+            "name": "libpng",
+            "version": "1.6.55#0"
+        },
+        {
+            "name": "ltla-aarand",
+            "version": "1.1.0#0"
+        },
+        {
+            "name": "ltla-cppkmeans",
+            "version": "4.0.4#0"
+        },
+        {
+            "name": "ltla-cppirlba",
+            "version": "3.0.1#1"
+        },
+        {
+            "name": "ltla-sanisizer",
+            "version": "0.2.0#0"
+        },
+        {
+            "name": "ltla-subpar",
+            "version": "0.4.1#0"
+        },
+        {
+            "name": "lz4",
+            "version": "1.10.0#0"
+        },
+        {
+            "name": "nlohmann-json",
+            "version": "3.12.0#2"
+        },
+        {
+            "name": "openblas",
+            "version": "0.3.29#0"
+        },
+        {
+            "name": "range-v3",
+            "version": "0.12.0#4"
+        },
+        {
+            "name": "spdlog",
+            "version": "1.17.0#0"
+        },
+        {
+            "name": "tbb",
+            "version": "2022.2.0#0"
+        },
+        {
+            "name": "tiff",
+            "version": "4.7.1#0"
+        },
+        {
+            "name": "tinycolormap",
+            "version": "0.8.0#0"
+        },
+        {
+            "name": "unordered-dense",
+            "version": "4.8.1#0"
+        }
+    ]
+}

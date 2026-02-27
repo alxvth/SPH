@@ -1,0 +1,96 @@
+{
+  "inputPath": "YOUR_LOCAL_INPUT_PATH",
+  "cachePathBase": "YOUR_LOCAL_CACHE_PATH",
+  "imgFormat": "RGB",
+  "imageNames": [
+    "bus.jpg",
+    "bike.jpg",
+    "umbrellas.jpg"   
+  ],
+  "componentSim": 
+  [
+    "NEIGH_WALKS",
+    "NEIGH_WALKS_SINGLE_OVERLAP",
+    "NEIGH_OVERLAP",
+    "GEO_CENTROID",
+    "GEO_WALKS",
+    "EUCLID_CENTROID"
+  ],
+  "dataInputNorm" : [
+    "NONE", 
+    "STANDARD",
+    "UNIFORM",
+    "ROBUST"
+  ],
+  "neighborConnection": [
+    "FOUR",
+    "EIGHT"
+  ],
+  "neighborSymmetries": [
+    false
+  ],
+  "neighborConnectComponents": [
+    true,
+    false
+  ],
+  "knnMetric": [
+  "L2"
+  ],
+  "nKnns": [
+    50,
+    100,
+    200
+  ],
+  "randomWalkNums": [
+    100,
+    200,
+    300
+  ],
+  "randomWalkLens": [
+    50,
+    100,
+    200,
+    400
+  ],
+  "randomWalkStepWeight": [
+    "LINEAR"
+  ],
+  "randomWalkHandling" : [
+    "MERGE_DATA_NEW_WALKS",
+    "MERGE_RW_ONLY",
+    "MERGE_RW_NEW_WALKS",
+    "MERGE_RW_NEW_WALKS_AND_KNN"
+  ],
+  "randomWalkReduction" : [
+    "NONE",
+    "PROPORTIONAL_COMPONENT_REDUCTION",
+    "PROPORTIONAL_DOUBLE",
+    "PROPORTIONAL_HALF",
+    "CONSTANT",
+    "CONSTANT_LOW",
+    "CONSTANT_HIGH"
+  ],
+  "randomWalkWeightSize" : [
+    true,
+    false
+  ],
+  "randomWalkPairSims" : [
+    true,
+    false
+  ],
+  "dataDistNorm": [
+    "TSNE",
+    "UMAP"
+  ],
+  "weightTransitionBySize" : [
+    true,
+    false
+  ],
+  "initEmbeddingDataLevel" : "RANDOM",
+  "skipLevelSimilarities" : false,
+  "skipEmbeddingTSNE" : false,
+  "skipEmbeddingUMAP" : false,
+  "skipExistingSettings" : true,
+  "skipSaveStructuresToDisk" : true,
+  "initLevelEmbWithPrevious" : false
+}

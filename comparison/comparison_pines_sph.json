@@ -1,0 +1,75 @@
+{
+  "inputPath": ".\\EvalSpatialHierarchy\\data",
+  "cachePathBase": ".\\EvalSpatialHierarchy\\out",
+  "saveSubFolder": "pines\\SPH",
+  "imgFormat": "TIFFSTACK",
+  "imageNames": [
+    "indian_pines_corrected_normed"
+  ],
+  "componentSim": [
+    "NEIGH_WALKS"
+  ],
+  "dataInputNorm" : [
+    "NONE"
+  ],
+  "neighborConnection": [
+    "FOUR",
+    "EIGHT"
+  ],
+  "neighborSymmetries": [
+    true
+  ],
+  "neighborConnectComponents": [
+    true
+  ],
+  "knnMetric": [
+    "L2"
+  ],
+  "nKnns": [
+    0,
+    90
+  ],
+  "randomWalkNums": [
+    100,
+    50,
+    25,
+    10
+  ],
+  "randomWalkLens": [
+    100,
+    50,
+    25,
+    10
+  ],
+  "randomWalkStepWeight": [
+    "NORMAL"
+  ],
+  "randomWalkSim": [
+    "NEIGH_WALKS"
+  ],
+  "randomWalkHandling" : [
+    "MERGE_RW_ONLY"
+  ],
+  "randomWalkReduction" : [
+    "PROPORTIONAL_COMPONENT_REDUCTION"
+  ],
+  "randomWalkWeightSize" : [
+    true
+  ],
+  "randomWalkPairSims" : [
+    true
+  ],
+  "dataDistNorm": [
+    "TSNE"
+  ],
+  "weightTransitionBySize" : [
+    false
+  ],
+  "initEmbeddingDataLevel" : "RANDOM",
+  "skipLevelSimilarities" : true,
+  "skipEmbeddingTSNE" : true,
+  "skipEmbeddingUMAP" : true,
+  "skipExistingSettings" : true,
+  "skipSaveStructuresToDisk" : true,
+  "initLevelEmbWithPrevious" : false
+}

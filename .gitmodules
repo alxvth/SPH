@@ -1,0 +1,6 @@
+[submodule "comparison/BarbatoHyperspectralSLIC"]
+	path = comparison/BarbatoHyperspectralSLIC
+	url = https://github.com/alxvth/BarbatoHyperspectralSLIC.git
+[submodule "comparison/EvalSpatialHierarchy"]
+	path = comparison/EvalSpatialHierarchy
+	url = https://github.com/alxvth/SPH_evaluation.git
